@@ -92,6 +92,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,16 +122,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\POO_P6\POO_P6\articles.cpp" />
+    <ClCompile Include="..\..\POO_P6\POO_P6\commandes.cpp" />
+    <ClCompile Include="..\..\POO_P6\POO_P6\utilisateur.cpp" />
     <ClCompile Include="CLcad.cpp" />
     <ClCompile Include="CLmap.cpp" />
     <ClCompile Include="CLservice.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyForm1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\POO_P6\POO_P6\articles.h" />
+    <ClInclude Include="..\..\POO_P6\POO_P6\commandes.h" />
+    <ClInclude Include="..\..\POO_P6\POO_P6\utilisateur.h" />
     <ClInclude Include="CLcad.h" />
     <ClInclude Include="CLmapTB.h" />
     <ClInclude Include="CLservices.h" />
     <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="home.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>

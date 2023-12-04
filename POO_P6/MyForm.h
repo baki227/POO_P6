@@ -124,7 +124,7 @@ namespace POOP6 {
 			this->btn_update->TabIndex = 4;
 			this->btn_update->Text = L"UPD";
 			this->btn_update->UseVisualStyleBackColor = true;
-			this->btn_delete->Click += gcnew System::EventHandler(this, &MyForm::btn_update_Click);
+			this->btn_update->Click += gcnew System::EventHandler(this, &MyForm::btn_update_Click);
 		
 			// 
 			// txt_id
